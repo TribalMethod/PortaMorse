@@ -74,7 +74,7 @@
             Diagnostics.Debugger.Break()
         Else
             e.Handled = True
-            MessageBox.Show(e.ExceptionObject.Message & Environment.NewLine & e.ExceptionObject.StackTrace,
+            MessageBox.Show(e.ExceptionObject.Message & System.Environment.NewLine & e.ExceptionObject.StackTrace,
                             "Error", MessageBoxButton.OK)
         End If
     End Sub

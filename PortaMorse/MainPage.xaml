@@ -11,7 +11,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True" xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input" xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -28,7 +28,13 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button Content="Tap" Height="232" HorizontalAlignment="Left" Margin="31,293,0,0" Name="Button1" VerticalAlignment="Top" Width="396" FontSize="72" FontWeight="Bold" Background="LightGray" />
+            <Button Content="Tap" Height="232" HorizontalAlignment="Left" Margin="31,293,0,0" Name="Button1" VerticalAlignment="Top" Width="396" FontSize="72" FontWeight="Bold" Background="LightGray" Foreground="Black" ClickMode="Release" />
+            <ListBox Height="190" HorizontalAlignment="Left" Margin="306,49,0,0" Name="ListBox1" VerticalAlignment="Top" Width="103">
+                <ListBoxItem Content="1" />
+                <ListBoxItem Content="2" />
+            </ListBox>
+            <telerikInput:RadNumericUpDown HorizontalAlignment="Center" Margin="59,61,219,0" Name="RadNumericUpDown1" VerticalAlignment="Top" />
+            <telerikPrimitives:RadLoopingList Height="226" HorizontalAlignment="Left" Margin="354,37,0,0" Name="RadLoopingList1" VerticalAlignment="Top" Width="84" />
         </Grid>
     </Grid>
  
